@@ -57,7 +57,7 @@ Navigate to http://127.0.0.1:5000/
 Username: username
 Password: password
 
-Both credentials can be edited in [app.py (L28-29)](app.py#L28-L29) and the username in [index.html (L22)](index.html#L22).
+Both credentials can be edited in [app.py (L28-29)](app.py#L28-L29) and the username in [index.html (L22)](templates/index.html#L22).
 
 Note: The username is not needed for access as every logon is set to the default username, but it's useful for password managers.
 
