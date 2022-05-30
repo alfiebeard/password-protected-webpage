@@ -4,7 +4,7 @@ Demonstration of how to build a lightweight password protected webpage. This can
 ## Key Features
 * Lightweight password protection for webpages
 * No need for a complex user management system
-* Several example protected webpages (including a video)
+* Several example protected webpages (including one protecting a video)
 * Saves a user's session, so they do not need to re-enter the password
 * Protected with a basic content security policy (CSP) using Flask-Talisman
 * A cool incorrect password shake animation (if that's what you're after).
@@ -20,7 +20,7 @@ There are three example webpages included in this demo.
 You can easily switch between each of these examples by changing the template served in [app.py (L46)](app.py#L46)
 
 ## Security Considerations
-If you are planning on deploying this approach it's important to be aware of the security implications. A single global password is not suitable for protecting content of significant importantance. Single global passwords can be easily published and shared between visitors, rendering them useless. However, they can be useful for making content available to small trusted groups or in placing an extra barrier between a visitor and some more protected content. Never place any content that you would not want in the public domain behind behind a single global password.
+If you are planning on deploying this approach it's important to be aware of the security implications. A single global password is not suitable for protecting content of significant importantance. Single global passwords can be easily published and shared between visitors, rendering them useless. However, they can be useful for making content available to small trusted groups or in placing an extra barrier between a visitor and some more protected content. Never place any content that you would not want in the public domain behind a single global password.
 
 # Getting Started
 
@@ -28,7 +28,7 @@ If you are planning on deploying this approach it's important to be aware of the
 Python 3.9
 
 ## Installation
-1. Clone the repo.
+1. Clone the repository
 ```
 git clone https://github.com/alfiebeard/password-protected-webpage.git
 ```
@@ -65,4 +65,4 @@ Note: The username is not needed for access as every logon is set to the default
 The Flask secret key is defined outside [app.py](app.py) in [.env](.env) to keep it separate. Then [config.py](config.py) handles the loading of this into [app.py](app.py). A [Procfile](Procfile) is also included, so you can deploy to Heroku.
 
 # License
-Licensed under the [MIT License](LICENSE.md)
+Licensed under the [MIT License](LICENSE.md).
